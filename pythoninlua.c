@@ -666,6 +666,7 @@ LUA_API int luaopen_libpython(lua_State *L)
     lua_setfield(L, LUA_REGISTRYINDEX, "Py_None"); /* registry.Py_None */
 
     lua_setfield(L, -2, "none"); /* python.none */
+    lua_setglobal(L, "python");
 
-    return 0;
+    return 1;
 }
