@@ -2,7 +2,7 @@
 
  Lunatic Python
  --------------
- 
+
  Copyright (c) 2002-2005  Gustavo Niemeyer <gustavo@niemeyer.net>
 
  This library is free software; you can redistribute it and/or
@@ -39,6 +39,6 @@ typedef struct
 } py_object;
 
 py_object*    luaPy_to_pobject(lua_State *L, int n);
-LUA_API int   luaopen_python(lua_State *L);
+LUA_API int   luaopen_libpython(lua_State *L);
 
 #endif
